@@ -1,6 +1,6 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Андрей Демьянов](https://up.htmlacademy.ru/adaptive/20/user/305665).
+* Студент: [Андрей Демьянoв](https://up.htmlacademy.ru/adaptive/20/user/305665).
 * Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
