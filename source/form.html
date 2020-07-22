@@ -27,30 +27,32 @@
       </nav>
 
       <div class="header__image__thumb">
-        <img src="https://via.placeholder.com/150x150">
+        <img src="https://via.placeholder.com/150x150" alt="">
       </div>
     </header>
 
     <main class="page__review">
       <div class="review__title">
-        <h2>Оставьте свой отзыв</h2>
+        <h1>Оставьте свой отзыв</h1>
         <p>Помогите нашим отелям стать лучше!</p>
         <p>Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
 
       <section class="review__form">
+        <h2 class="visually-hidden">Форма отправки отзыва:</h2>
+
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Представьтесь:</legend>
 
             <label for="name">Имя*:</label>
-            <input type="textfield" name="name" id="name" value="Петр" required>
+            <input type="text" name="name" id="name" value="Петр" required>
 
             <label for="surname">Фамилия*:</label>
-            <input type="textfield" name="surname" id="surname" value="Иванов" required>
+            <input type="text" name="surname" id="surname" value="Иванов" required>
 
             <label>Отчество:</label>
-            <input type="textfield" name="patronymic" value="Александрович">
+            <input type="text" name="patronymic" value="Александрович">
           </fieldset>
 
           <fieldset>
@@ -73,7 +75,7 @@
             <label for="radio__negative">Скорее отрицательное</label>
 
             <input type="radio" name="no-answer" id="radio__no-answer">
-            <label for="">Затрудняюсь ответить</label>
+            <label for="radio__no-answer">Затрудняюсь ответить</label>
           </fieldset>
 
           <fieldset>
@@ -97,7 +99,7 @@
             <textarea>Опишите подробно все свои восторги</textarea>
           </fieldset>
 
-          <input type="submit" name="" value="Отправить отзыв">
+          <input type="submit" name="button" value="Отправить отзыв">
         </form>
       </section>
     </main>
@@ -119,7 +121,7 @@
       <div class="footer__link">
         <a href="">
           <p>Разработано</p>
-          <img src="https://via.placeholder.com/150x150" width="27" height="35">
+          <img src="https://via.placeholder.com/150x150" width="27" height="35" alt="HTML Академия">
         </a>
       </div>
 
