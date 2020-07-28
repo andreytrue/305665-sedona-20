@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="page__header header">
+      <a class="header__logo" href="">
+        <img src="img/logo-mobile.svg" width="102" height="84" alt="Город Седона">
+      </a>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="">Фото и видео</a>
+          </li>
+          <li class="nav__item">
+            <a href="">Форма отзыва</a>
+          </li>
+          <li class="nav__item">
+            <a href="">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__image">
+        <img src="https://via.placeholder.com/150x150" alt="">
+      </div>
+    </header>
+
+    <main class="page__main review">
+
+      <div class="review__title">
+        <h1>Оставьте свой отзыв</h1>
+
+        <p>Помогите нашим отелям стать лучше!</p>
+        <p>Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+
+      <section class="review__form">
+        <h2 class="visually-hidden">Форма отправки отзыва:</h2>
+
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>Представьтесь:</legend>
+
+            <label for="name">Имя*:</label>
+            <input type="text" name="name" id="name" value="Петр" required>
+
+            <label for="surname">Фамилия*:</label>
+            <input type="text" name="surname" id="surname" value="Иванов" required>
+
+            <label>Отчество:</label>
+            <input type="text" name="patronymic" value="Александрович">
+          </fieldset>
+
+          <fieldset>
+            <legend>Контактная информация:</legend>
+
+            <label for="phone">Контактный телефон*:</label>
+            <input type="tel" name="phone" id="phone" value="Введите телефон" required>
+
+            <label for="mail">Электронная почта*:</label>
+            <input type="email" name="mail" id="mail" value="Введите e-mail" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Ваше общее впечатление:</legend>
+
+            <input type="radio" name="positive" id="radio__positive" checked>
+            <label for="radio__positive">Скорее положительное</label>
+
+            <input type="radio" name="negative" id="radio__negative">
+            <label for="radio__negative">Скорее отрицательное</label>
+
+            <input type="radio" name="no-answer" id="radio__no-answer">
+            <label for="radio__no-answer">Затрудняюсь ответить</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Посещенные достопримечательности:</legend>
+
+            <input type="checkbox" name="devil-bridge" id="checkbox--bridge" checked>
+            <label for="checkbox--bridge">Мост Дьявола</label>
+
+            <input type="checkbox" name="mountain" id="checkbox--mountain" checked>
+            <label for="checkbox--mountain">Гора-Колокол</label>
+
+            <input type="checkbox" name="slide-park" id="checkbox--park" checked>
+            <label for="checkbox--park">Слайд-парк</label>
+
+            <input type="checkbox" name="red-rocks" id="checkbox--rocks">
+            <label for="checkbox--rocks">Красные скалы</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Опишите свои эмоции:</legend>
+            <textarea>Опишите подробно все свои восторги</textarea>
+          </fieldset>
+
+          <input type="submit" name="button" value="Отправить отзыв">
+        </form>
+      </section>
+    </main>
+
+    <footer class="page__footer footer">
+      <h2 class="footer__title">#visitsedona</h2>
+      
+      <div class="footer__socials socials">
+        <a class="socials__item" href="">
+          <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Мы в Твиттер">
+        </a>
+        
+        <a class="socials__item" href="">
+          <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Мы в Фейсбук">
+        </a>
+        
+        <a class="socials__item" href="">
+          <img src="https://via.placeholder.com/150x150" width="46" height="48" alt="Мы на Ютубе">
+        </a>
+      </div>
+
+      <div class="footer__link">
+        <a href="">
+          <p>Разработано</p>
+          <img src="https://via.placeholder.com/150x150" width="27" height="35" alt="HTML Академия">
+        </a>
+      </div>
+
+    </footer>
+
+  </body>
+</html>
