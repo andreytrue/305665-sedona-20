@@ -1,16 +1,42 @@
 .intro {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
   text-transform: uppercase;
 
-  font-family: PT Sans;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 
 .intro__title {
-  margin-bottom: 45px;
+	display: block;
+	font-size: 18px;
+	line-height: 26px;
+  font-weight: bold;
+
+  &--index{
+  	width: 255px;
+  }
+}
+
+.intro__text {
+	display: block;
+
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 26px;
+
+	color: @light-gray;
+
+	&--index {
+  	width: 255px;
+  }
+
+  &--photo {
+  	width: 290px;
+  }
 }
 

@@ -1,23 +1,32 @@
-@black: #000000;
-@white: #ffffff;
-@blue: #81B3D2;
+// Header nav
 
 .nav{
-
-
+  order: -1;
 }
 
 .nav__list{
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
+  width: 320px;
+
+  list-style: none;
+  order: -1;
+
+  padding: 0;
+  margin: 0;
 }
 
 .nav__item{
+  display: block;
   background-color: @blue;
 
-  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+  width: 100%;
+  text-align: center;
 
   a{
+    display: block;
     color: @white;
     font-family: PT Sans;
     font-weight: bold;
@@ -26,6 +35,7 @@
     text-transform: uppercase;
 
     text-decoration: none;
+
+    padding: 10px 0 5px;
   }
 }
-
