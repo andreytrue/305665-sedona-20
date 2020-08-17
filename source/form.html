@@ -46,8 +46,8 @@
 
         <h2 class="visually-hidden">Форма отправки отзыва:</h2>
 
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
+        <form class="review__form form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__name">
             <legend>Представьтесь:</legend>
 
             <label for="name">Имя*:</label>
@@ -60,7 +60,7 @@
             <input type="text" name="patronymic" value="Александрович">
           </fieldset>
 
-          <fieldset>
+          <fieldset class="form__contact">
             <legend>Контактная информация:</legend>
 
             <label for="phone">Контактный телефон*:</label>
@@ -70,7 +70,7 @@
             <input type="email" name="mail" id="mail" value="Введите e-mail" required>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="form__survey">
             <legend>Ваше общее впечатление:</legend>
 
             <input type="radio" name="positive" id="radio__positive" checked>
@@ -83,7 +83,7 @@
             <label for="radio__no-answer">Затрудняюсь ответить</label>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="form__attractions">
             <legend>Посещенные достопримечательности:</legend>
 
             <input type="checkbox" name="devil-bridge" id="checkbox--bridge" checked>
@@ -99,12 +99,12 @@
             <label for="checkbox--rocks">Красные скалы</label>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="form__emotions">
             <legend>Опишите свои эмоции:</legend>
             <textarea>Опишите подробно все свои восторги</textarea>
           </fieldset>
 
-          <input type="submit" name="button" value="Отправить отзыв">
+          <input class="form__button" type="submit" name="button" value="Отправить отзыв">
         </form>
       </section>
     </main>
