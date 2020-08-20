@@ -30,7 +30,7 @@
         </ul>
       </nav>
 
-      <div class="header__image header__image--photo">
+      <div class="header__image header__image--form">
         <img src="img/text-sedona.svg" width="229" height="39" alt="">
       </div>
     </header>
@@ -47,61 +47,94 @@
         <h2 class="visually-hidden">Форма отправки отзыва:</h2>
 
         <form class="review__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__name">
+          <fieldset class="form__person">
             <legend>Представьтесь:</legend>
 
-            <label for="name">Имя*:</label>
-            <input type="text" name="name" id="name" value="Петр" required>
+            <ul class="form__person-list">
+              <li class="form__person-item">
+                <label for="name">Имя*:</label>
+                <input type="text" name="name" id="name" value="Петр" required>
+              </li>
 
-            <label for="surname">Фамилия*:</label>
-            <input type="text" name="surname" id="surname" value="Иванов" required>
+              <li class="form__person-item">
+                <label for="surname">Фамилия*:</label>
+                <input type="text" name="surname" id="surname" value="Иванов" required>
+              </li>
 
-            <label>Отчество:</label>
-            <input type="text" name="patronymic" value="Александрович">
+              <li class="form__person-item">
+                <label>Отчество:</label>
+                <input type="text" name="patronymic" value="Александрович">
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="form__contact">
             <legend>Контактная информация:</legend>
 
-            <label for="phone">Контактный телефон*:</label>
-            <input type="tel" name="phone" id="phone" value="Введите телефон" required>
+            <ul class="form__contact-list">
+              <li class="form__contact-item">
+                <label for="phone">Контактный телефон*:</label>
+                <input type="tel" name="phone" id="phone" value="Введите телефон" required>
+              </li>
 
-            <label for="mail">Электронная почта*:</label>
-            <input type="email" name="mail" id="mail" value="Введите e-mail" required>
+              <li class="form__contact-item">
+                <label for="mail">Электронная почта*:</label>
+                <input type="email" name="mail" id="mail" value="Введите e-mail" required>
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="form__survey">
             <legend>Ваше общее впечатление:</legend>
 
-            <input type="radio" name="positive" id="radio__positive" checked>
-            <label for="radio__positive">Скорее положительное</label>
+            <ul class="form__survey-list">
+              <li class="form__survey-item">
+                <input class="form__survey-input visually-hidden" type="radio" name="positive" id="radio__positive" checked>
+                <label for="radio__positive">Скорее положительное</label>
+              </li>
 
-            <input type="radio" name="negative" id="radio__negative">
-            <label for="radio__negative">Скорее отрицательное</label>
+              <li class="form__survey-item">
+                <input class="form__survey-input visually-hidden" type="radio" name="negative" id="radio__negative">
+                <label for="radio__negative">Скорее отрицательное</label>
+              </li>
 
-            <input type="radio" name="no-answer" id="radio__no-answer">
-            <label for="radio__no-answer">Затрудняюсь ответить</label>
+              <li class="form__survey-item">
+                <input class="form__survey-input visually-hidden" type="radio" name="no-answer" id="radio__no-answer">
+                <label for="radio__no-answer">Затрудняюсь ответить</label>
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="form__attractions">
             <legend>Посещенные достопримечательности:</legend>
 
-            <input type="checkbox" name="devil-bridge" id="checkbox--bridge" checked>
-            <label for="checkbox--bridge">Мост Дьявола</label>
+            <ul class="form__attractions-list">
+              <li class="form__attractions-item">
+                <input class="form__attractions-input visually-hidden" type="checkbox" name="devil-bridge" id="checkbox--bridge" checked>
+                <label for="checkbox--bridge">Мост Дьявола</label>
+              </li>
 
-            <input type="checkbox" name="mountain" id="checkbox--mountain" checked>
-            <label for="checkbox--mountain">Гора-Колокол</label>
+              <li class="form__attractions-item">
+                <input class="form__attractions-input visually-hidden" type="checkbox" name="mountain" id="checkbox--mountain" checked>
+                <label for="checkbox--mountain">Гора-Колокол</label>
+              </li>
 
-            <input type="checkbox" name="slide-park" id="checkbox--park" checked>
-            <label for="checkbox--park">Слайд-парк</label>
+              <li class="form__attractions-item">
+                <input class="form__attractions-input visually-hidden" type="checkbox" name="slide-park" id="checkbox--park" checked>
+                <label for="checkbox--park">Слайд-парк</label>
+              </li>
 
-            <input type="checkbox" name="red-rocks" id="checkbox--rocks">
-            <label for="checkbox--rocks">Красные скалы</label>
+              <li class="form__attractions-item">
+                <input class="form__attractions-input visually-hidden" type="checkbox" name="red-rocks" id="checkbox--rocks">
+                <label for="checkbox--rocks">Красные скалы</label>
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="form__emotions">
             <legend>Опишите свои эмоции:</legend>
-            <textarea>Опишите подробно все свои восторги</textarea>
+            
+            <textarea class="form__emotions-item">Опишите подробно все свои восторги</textarea>
           </fieldset>
 
           <input class="form__button" type="submit" name="button" value="Отправить отзыв">
