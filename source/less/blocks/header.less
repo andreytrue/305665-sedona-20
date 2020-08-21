@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__wrapper {
+  width: 100%;
+  height: 56px;
+
+  z-index: 2;
+
+  background-color: @white;
+}
+
+.header__logo {
+  display: block;
+  text-align: center;
+}
+
+.header__nav {
+  order: -1;
+}
+
+.header__image {
+  position: relative;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  width: 100%;
+
+  text-align: center;
+  z-index: -1;
+
+  margin-top: -36px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 57px;
+
+    bottom: -31px;
+    left: 0;
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+/* Header image on index page */
+.header__image--index {
+  height: 389px;
+}
+
+.header__image--index img {
+  padding: 90px 20px 85px;
+}
+
+/* Header image on photo page */
+.header__image--subpage {
+  display: block;
+
+  margin: 0;
+  margin-top: -56px;
+  height: 214px;
+
+  background-position: 0 -170px;
+}
+
+.header__image--subpage img {
+  padding: 108px 20px 85px;
+}
