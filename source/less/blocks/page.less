@@ -1,8 +1,6 @@
 // Globals
 
 body {
-  width: 320px;
-
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -21,6 +19,18 @@ img {
   grid-template-rows: min-content 1fr min-content;
   align-items: center;
   justify-content: center;
+
+ 	width: @mobile-width;
+  min-height: 100%;
+  margin: 0 auto;
+
+ 	@media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }
 
 .page__header {
@@ -35,6 +45,10 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+  	margin: 65px 0 40px;
+  }
 }
 
 .page__footer {

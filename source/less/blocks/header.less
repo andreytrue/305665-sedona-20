@@ -7,7 +7,7 @@
   width: 100%;
   height: 56px;
 
-  z-index: 2;
+  z-index: 3;
 
   background-color: @white;
 }
@@ -15,6 +15,10 @@
 .header__logo {
   display: block;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+  	margin-top: -60px;
+  }
 }
 
 .header__nav {
@@ -23,35 +27,68 @@
 
 .header__image {
   position: relative;
-  background-image: url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 
   width: 100%;
 
   text-align: center;
-  z-index: -1;
+  z-index: 2;
 
-  margin-top: -36px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 57px;
-
-    bottom: -31px;
-    left: 0;
-
-    background-image: url("../img/bg-intro-triangle-mobile.svg");
+  @media (min-width: @mobile-width) {
+  	background-image: url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    margin-top: -36px;
+
+    &::after {
+	    position: absolute;
+	    content: "";
+	    width: 100%;
+	    height: 57px;
+
+	    bottom: -31px;
+	    left: 0;
+
+	    background-image: url("../img/bg-intro-triangle-mobile.svg");
+	    background-repeat: no-repeat;
+	    background-position: 0 0;
+  	}
+  }
+
+  @media (min-width: @tablet-width) {
+  	background-image: url("../img/bg-back-tablet@1x.jpg");
+	  background-repeat: no-repeat;
+	  background-position: 0 -30px;
+
+	  margin-top: -60px;
+
+	  &::after {
+	    position: absolute;
+	    content: "";
+	    width: 100%;
+	    height: 57px;
+
+	    bottom: 30px;
+	    left: 0;
+
+	    background-image: url("../img/bg-intro-triangle-tablet.svg");
+	    background-repeat: no-repeat;
+	    background-position: 0 0;
+
+	    @media (min-width: @tablet-width) {
+        bottom: 0px;
+  		}
+  	}
   }
 }
 
 /* Header image on index page */
 .header__image--index {
   height: 389px;
+
+  @media (min-width: @tablet-width) {
+  	height: 518px;
+  }
 }
 
 .header__image--index img {
@@ -67,6 +104,10 @@
   height: 214px;
 
   background-position: 0 -170px;
+
+  @media (min-width: @tablet-width) {
+  	height: 233px;
+  }
 }
 
 .header__image--subpage img {

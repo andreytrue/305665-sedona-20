@@ -1,0 +1,86 @@
+/* Form contact */
+
+.contact {
+  width: 100%;
+}
+
+.contact__list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: @tablet-width) {
+    margin-top: 17px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    margin-bottom: 51px;
+  }
+}
+
+.contact__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.contact__item:first-of-type {
+  margin-bottom: 28px;
+}
+
+.contact__item label {
+  display: block;
+  font-size: 14px;
+
+  margin: 0;
+  padding: 0;
+
+  margin-left: 42px;
+  margin-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 22px;
+  }
+}
+
+.contact__item input {
+  position: relative;
+  display: block;
+
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+
+  width: 100%;
+  padding: 18px 0 14px 22px;
+
+  border: none;
+  background-color: @special-gray;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 58px;
+
+    top: 0;
+    right: 0;
+
+    background-color: @dark-gray;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.contact__item:first-of-type label {
+  margin-top: 17px;
+}
+
+.contact__item:last-of-type label {
+  margin-top: 14px;
+}

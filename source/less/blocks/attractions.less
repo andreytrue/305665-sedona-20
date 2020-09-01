@@ -1,0 +1,78 @@
+/* Form attractions */
+
+.attractions__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+    justify-content: space-between;
+    width: 484px;
+    margin: 0 auto;
+  }
+}
+
+.attractions__item {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
+  margin: 0;
+  margin-left: 45px;
+}
+
+.attractions__input + label::before {
+  content: "";
+  position: absolute;
+  left: -80px;
+  top: -12px;
+  width: 46px;
+  height: 46px;
+
+  background-color: @special-gray;
+  border-radius: 5%;
+}
+
+.attractions__input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -67px;
+  top: 3px;
+  width: 24px;
+  height: 17px;
+
+  background-image: url("../img/tick.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.attractions__item label {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+
+  margin: 0;
+  padding: 0;
+
+  margin-left: 58px;
+}
+
+.attractions__item:first-child {
+  margin-top: 37px;
+}
+
+.attractions__item:not(:last-child) {
+  margin-bottom: 43px;
+}
+
+.attractions__item:last-child {
+  margin-bottom: 41px;
+}

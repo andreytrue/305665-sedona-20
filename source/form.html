@@ -5,7 +5,6 @@
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-
   <body class="page__body">
     <header class="page__header header">
       <div class="header__wrapper">
@@ -30,8 +29,8 @@
         </ul>
       </nav>
 
-      <div class="header__image header__image--form">
-        <img src="img/text-sedona.svg" width="229" height="39" alt="">
+      <div class="header__image header__image--subpage">
+        <img src="img/text-sedona.svg" width="229" height="39" alt="Седона - райское местечко">
       </div>
     </header>
 
@@ -47,85 +46,85 @@
         <h2 class="visually-hidden">Форма отправки отзыва:</h2>
 
         <form class="review__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__person">
+          <fieldset class="form__person person">
             <legend>Представьтесь:</legend>
 
-            <ul class="form__person-list">
-              <li class="form__person-item">
+            <ul class="person__list">
+              <li class="person__item">
                 <label for="name">Имя*:</label>
                 <input type="text" name="name" id="name" value="Петр" required>
               </li>
 
-              <li class="form__person-item">
+              <li class="person__item">
                 <label for="surname">Фамилия*:</label>
                 <input type="text" name="surname" id="surname" value="Иванов" required>
               </li>
 
-              <li class="form__person-item">
+              <li class="person__item">
                 <label>Отчество:</label>
                 <input type="text" name="patronymic" value="Александрович">
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form__contact">
+          <fieldset class="form__contact contact">
             <legend>Контактная информация:</legend>
 
-            <ul class="form__contact-list">
-              <li class="form__contact-item">
+            <ul class="contact__list">
+              <li class="contact__item">
                 <label for="phone">Контактный телефон*:</label>
                 <input type="tel" name="phone" id="phone" value="Введите телефон" required>
               </li>
 
-              <li class="form__contact-item">
+              <li class="contact__item">
                 <label for="mail">Электронная почта*:</label>
                 <input type="email" name="mail" id="mail" value="Введите e-mail" required>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form__survey">
+          <fieldset class="form__survey survey">
             <legend>Ваше общее впечатление:</legend>
 
-            <ul class="form__survey-list">
-              <li class="form__survey-item">
-                <input class="form__survey-input visually-hidden" type="radio" name="positive" id="radio__positive" checked>
+            <ul class="survey__list">
+              <li class="survey__item">
+                <input class="survey__input visually-hidden" type="radio" name="positive" id="radio__positive" checked>
                 <label for="radio__positive">Скорее положительное</label>
               </li>
 
-              <li class="form__survey-item">
-                <input class="form__survey-input visually-hidden" type="radio" name="negative" id="radio__negative">
+              <li class="survey__item">
+                <input class="survey__input visually-hidden" type="radio" name="negative" id="radio__negative">
                 <label for="radio__negative">Скорее отрицательное</label>
               </li>
 
-              <li class="form__survey-item">
-                <input class="form__survey-input visually-hidden" type="radio" name="no-answer" id="radio__no-answer">
+              <li class="survey__item">
+                <input class="survey__input visually-hidden" type="radio" name="no-answer" id="radio__no-answer">
                 <label for="radio__no-answer">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form__attractions">
+          <fieldset class="form__attractions attractions">
             <legend>Посещенные достопримечательности:</legend>
 
-            <ul class="form__attractions-list">
-              <li class="form__attractions-item">
-                <input class="form__attractions-input visually-hidden" type="checkbox" name="devil-bridge" id="checkbox--bridge" checked>
+            <ul class="attractions__list">
+              <li class="attractions__item">
+                <input class="attractions__input visually-hidden" type="checkbox" name="devil-bridge" id="checkbox--bridge" checked>
                 <label for="checkbox--bridge">Мост Дьявола</label>
               </li>
 
-              <li class="form__attractions-item">
-                <input class="form__attractions-input visually-hidden" type="checkbox" name="mountain" id="checkbox--mountain" checked>
+              <li class="attractions__item">
+                <input class="attractions__input visually-hidden" type="checkbox" name="mountain" id="checkbox--mountain" checked>
                 <label for="checkbox--mountain">Гора-Колокол</label>
               </li>
 
-              <li class="form__attractions-item">
-                <input class="form__attractions-input visually-hidden" type="checkbox" name="slide-park" id="checkbox--park" checked>
+              <li class="attractions__item">
+                <input class="attractions__input visually-hidden" type="checkbox" name="slide-park" id="checkbox--park" checked>
                 <label for="checkbox--park">Слайд-парк</label>
               </li>
 
-              <li class="form__attractions-item">
-                <input class="form__attractions-input visually-hidden" type="checkbox" name="red-rocks" id="checkbox--rocks">
+              <li class="attractions__item">
+                <input class="attractions__input visually-hidden" type="checkbox" name="red-rocks" id="checkbox--rocks">
                 <label for="checkbox--rocks">Красные скалы</label>
               </li>
             </ul>
