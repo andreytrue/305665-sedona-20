@@ -8,7 +8,7 @@
 
 .person legend {
   @media (min-width: @tablet-width) {
-    align-self: left;
+    text-align: left;
   }
 }
 
@@ -19,6 +19,7 @@
   list-style: none;
   padding: 0;
 
+  margin: 0;
   margin-bottom: 25px;
 }
 
@@ -67,8 +68,8 @@
 .person__item:first-of-type {
   margin-top: 19px;
 
-  @media (max-width: @tablet-width) {
-    margin-top: 54px;
+  @media (min-width: @tablet-width) {
+    margin-top: 36px;
   }
 }
 

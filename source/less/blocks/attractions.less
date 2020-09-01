@@ -1,19 +1,31 @@
 /* Form attractions */
 
+.attractions {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.attractions legend {
+  @media (min-width: @tablet-width) {
+    width: 308px;
+  }
+}
+
 .attractions__list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-around;
   list-style: none;
 
   margin: 0;
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    align-items: center;
-    justify-content: space-between;
-    width: 484px;
-    margin: 0 auto;
+    justify-content: flex-start;
+    width: 410px;
+    margin-top: 52px;
+    margin-left: 160px;
   }
 }
 
@@ -24,7 +36,12 @@
   user-select: none;
 
   margin: 0;
-  margin-left: 45px;
+  margin-left: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-bottom: 62px;
+  }
 }
 
 .attractions__input + label::before {
@@ -66,13 +83,28 @@
 }
 
 .attractions__item:first-child {
-  margin-top: 37px;
+  @media (max-width: @tablet-width) {
+    margin-top: 37px;
+  }
 }
 
 .attractions__item:not(:last-child) {
-  margin-bottom: 43px;
+  @media (max-width: @tablet-width) {
+    margin-bottom: 43px;
+  }
 }
 
 .attractions__item:last-child {
-  margin-bottom: 41px;
+  @media (max-width: @tablet-width) {
+    margin-bottom: 41px;
+  }
+  @media (min-width: @tablet-width) {
+    margin-left: 82px;
+  }
+}
+
+.attractions__item:nth-of-type(2) {
+  @media (min-width: @tablet-width) {
+    margin-left: 62px;
+  }
 }

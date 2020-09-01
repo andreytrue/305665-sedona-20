@@ -14,22 +14,18 @@ img {
   height: auto;
 }
 
-.page__body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-items: center;
-  justify-content: center;
+.page__body {/**/
 
- 	width: @mobile-width;
+ 	max-width: @mobile-width;
   min-height: 100%;
   margin: 0 auto;
 
  	@media (min-width: @tablet-width) {
-    width: @tablet-width;
+    max-width: @tablet-width;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
+    max-width: @desktop-width;
   }
 }
 
@@ -47,7 +43,7 @@ img {
   align-items: center;
 
   @media (min-width: @tablet-width) {
-  	margin: 65px 0 40px;
+  	margin-top: 65px;
   }
 }
 
