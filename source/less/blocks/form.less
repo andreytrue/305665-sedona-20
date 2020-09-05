@@ -33,6 +33,10 @@
 .form fieldset {
 	position: relative;
   margin-top: 20px;
+
+  @media (min-width: @desktop-width) {
+  	margin-top: 40px;
+  }
 }
 
 .form fieldset:not(:last-of-type) {
@@ -79,6 +83,10 @@
   	width: 648px;
   	margin-top: 54px;
   }
+
+  @media (min-width: @desktop-width) {
+  	width: 960px;
+  }
 }
 
 /* Form button */
@@ -111,6 +119,10 @@
   	width: 324px;
   	margin-top: 58px;
   }
+  @media (min-width: @desktop-width) {
+  	width: 480px;
+  	margin-bottom: 66px;
+  }
 }
 
 /* Form obligatory */
@@ -127,5 +139,8 @@
 
   @media (max-width: @tablet-width) {
   	display: none;
+  }
+  @media (min-width: @desktop-width) {
+  	text-align: right;
   }
 }

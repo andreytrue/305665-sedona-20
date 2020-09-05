@@ -18,6 +18,19 @@
       background-position: 0 0;
     }
   }
+  @media (min-width: @desktop-width) {
+    width: 374px;
+
+    &::after {
+      right: -127px;
+    }
+  }
+}
+
+.survey legend {
+  @media (min-width: @desktop-width) {
+    text-align: right;
+  }
 }
 
 .survey__list {
@@ -27,6 +40,10 @@
   padding: 0;
 
   margin-bottom: 41px;
+
+  @media (max-width: @tablet-width) {
+    margin-top: 37px;
+  }
 }
 
 .survey__item {
@@ -71,6 +88,10 @@
   padding: 0;
 
   margin-left: 102px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 78px;
+  }
 }
 
 .survey__item:first-child {

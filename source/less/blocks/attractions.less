@@ -14,7 +14,7 @@
 
 .attractions__list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   list-style: none;
 
@@ -22,10 +22,17 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    justify-content: flex-start;
     width: 410px;
     margin-top: 52px;
     margin-left: 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    margin-top: 58px;
+    margin-bottom: 82px;
   }
 }
 
@@ -41,6 +48,9 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-bottom: 62px;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -86,6 +96,9 @@
   @media (max-width: @tablet-width) {
     margin-top: 37px;
   }
+  @media (min-width: @desktop-width) {
+    margin-left: 15px;
+  }
 }
 
 .attractions__item:not(:last-child) {
@@ -101,10 +114,16 @@
   @media (min-width: @tablet-width) {
     margin-left: 82px;
   }
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .attractions__item:nth-of-type(2) {
   @media (min-width: @tablet-width) {
     margin-left: 62px;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }

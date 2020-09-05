@@ -1,6 +1,11 @@
 .gallery-item--first {
 	@media (min-width: @tablet-width) {
-
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	@media (min-width: @desktop-width) {
+		grid-column-start: 1;
+		grid-column-end: 4;
 	}
 }
 
@@ -11,6 +16,12 @@
 		justify-content: space-between;
 
 		background-color: @special-gray;
+	}
+	@media (min-width: @desktop-width) {
+
+		color: @white;
+		background-color: @black;
+		opacity: 0.3;
 	}
 }
 
@@ -44,6 +55,10 @@
   text-transform: none;
 
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+  	color: @white;
+  }
 }
 
 .gallery-item__counter {

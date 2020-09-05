@@ -24,6 +24,12 @@
 
     width: @tablet-width;
   }
+
+  @media (min-width: @desktop-width) {
+    z-index: 5;
+    align-items: flex-start;
+    width: 100%;
+  }
 }
 
 .nav__item {
@@ -44,6 +50,9 @@
 .nav__item:nth-of-type(2){
   @media (min-width: @tablet-width) {
     margin-right: 156px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-right: 244px;
   }
 }
 
@@ -69,9 +78,5 @@
 
   @media (min-width: @tablet-width) {
     color: @black;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width;
   }
 }

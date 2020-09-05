@@ -8,7 +8,9 @@
   margin: 0;
   padding: 0;
 
-  @media (max-width: @tablet-width) {
-  	
+  @media (min-width: @tablet-width) {
+  	display: grid;
+  	grid-template-columns: 33% 33% 33%;
+  	grid-template-rows: 256px min-content;
   }
 }
