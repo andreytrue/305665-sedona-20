@@ -1,20 +1,10 @@
 .features__list {
   display: flex;
   flex-direction: column;
-  flex: wrap;
+  flex-wrap: wrap;
 
   list-style: none;
 
   margin: 0;
   padding: 0;
-
-  @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 256px 256px 256px;
-    grid-template-rows: 256px auto;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-template-columns: 400px 400px 400px;
-  }
 }
