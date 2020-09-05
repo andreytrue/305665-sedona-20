@@ -1,12 +1,17 @@
-.feature { 
+.feature {
   @media (max-width: @tablet-width) {
-  	display: flex;
-	  text-align: center;
-	  text-transform: uppercase;
-  	flex-direction: column;
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    flex-direction: column;
   }
+
   @media (min-width: @tablet-width) {
-  	flex-direction: row;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
   }
 }
 
@@ -25,6 +30,10 @@
   &--image {
     background-color: @blue;
     color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 292px;
   }
 }
 
@@ -70,8 +79,8 @@
   height: 260px;
 
   @media (min-width: @tablet-width) {
-		grid-column-start: 2;
-		grid-column-end: -1;
+    grid-column-start: 2;
+    grid-column-end: -1;
   }
 }
 
@@ -89,19 +98,18 @@
   list-style: none;
 
   padding: 0;
-  margin: 0;
 
   margin: 35px 0;
 
   @media (min-width: @tablet-width) {
-  	grid-column-start: 1;
-  	grid-column-end: 4;
-		flex-direction: row;
-	}
+    grid-column-start: 1;
+    grid-column-end: 4;
+    flex-direction: row;
+  }
 }
 
 .feature__list-item {
-	position: relative;
+  position: relative;
   display: block;
   flex-wrap: wrap;
   align-items: center;
@@ -116,26 +124,27 @@
   padding-left: 69px;
 
   @media (min-width: @tablet-width) {
-  	margin-top: 158px;
-  	margin-bottom: 59px;
-		width: 185px;
-		text-align: center;
-	}
+    margin-top: 158px;
+    margin-bottom: 59px;
+    width: 185px;
+    text-align: center;
+  }
 }
 
-.feature__list-item:nth-of-type(1){
-	@media (min-width: @tablet-width) {
-		padding-left: 31px;
-	}
+.feature__list-item:nth-of-type(1) {
+  @media (min-width: @tablet-width) {
+    padding-left: 31px;
+  }
 }
 
-.feature__list-item:nth-of-type(2){
-	@media (max-width: @tablet-width) {
-		margin: 26px 0;
-	}
-	@media (min-width: @tablet-width) {
-		order: 2;
-	}
+.feature__list-item:nth-of-type(2) {
+  @media (max-width: @tablet-width) {
+    margin: 26px 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
 }
 
 .feature__list-item h3 {
@@ -159,9 +168,9 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-		text-align: center;
-		width: 194px;
-	}
+    text-align: center;
+    width: 194px;
+  }
 }
 
 .feature__list-wrap {
@@ -172,73 +181,73 @@
 /* Feature first */
 
 .feature--first {
-	@media (min-width: @tablet-width) {
-		grid-column-start: 1;
-		grid-column-end: 4;
-		grid-row-start: 1;
-		grid-row-end: 3;
-	}
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }
 
-.feature--first .feature__inner{
-	@media (min-width: @tablet-width) {
-		grid-column-start: 1;
-		grid-column-end: 2;
-	}
+.feature--first .feature__inner {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+.feature--first .feature__image {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
 }
 
 /* Feature second */
-
+/*
 .feature--second {
 	@media (min-width: @tablet-width) {
 		grid-column-start: 1;
 		grid-column-end: 4;
 	}
-}
+}*/
 
 .feature--second .feature__image {
-	@media (min-width: @tablet-width) {
-		order: -1;
-		grid-column-start: 1;
-		grid-column-end: 3;
-	}
+  @media (min-width: @tablet-width) {
+    order: -1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
-.feature--second .feature__inner{
-	@media (min-width: @tablet-width) {
-		order: 2;
-		grid-column-start: 3;
-		grid-column-end: 4;
-	}
+.feature--second .feature__inner {
+  @media (min-width: @tablet-width) {
+    order: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
 }
 
 /* Feature 3*/
 
 .feature:nth-of-type(3) {
-	@media (min-width: @tablet-width) {
-		grid-column-start: 1;
-		grid-column-end: 2;
-  	min-height: 256px;
-
-	}
-}
-
-.feature:nth-of-type(3) .feature__inner{
-	@media (min-width: @tablet-width) {
-
-	}
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    min-height: 256px;
+  }
 }
 
 .feature:nth-of-type(4) {
-	@media (min-width: @tablet-width) {
-		grid-column-start: 2;
-		grid-column-end: 3;
-	}
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
 
 .feature:nth-of-type(5) {
-	@media (min-width: @tablet-width) {
-		grid-column-start: 3;
-		grid-column-end: 4;
-	}
+  @media (min-width: @tablet-width) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
 }

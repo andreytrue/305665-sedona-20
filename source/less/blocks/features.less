@@ -9,8 +9,12 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-  	display: grid;
-  	grid-template-columns: 33% 33% 33%;
-  	grid-template-rows: 256px min-content;
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+    grid-template-rows: 256px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 400px 400px 400px;
   }
 }

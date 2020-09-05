@@ -35,7 +35,7 @@
     </header>
 
     <main class="page__main">
-      <div class="page__intro intro">
+      <div class="page__intro intro intro--photo">
         <h1 class="intro__title intro__title--photo">Фото и видео</h1>
 
         <p class="intro__text intro__text--photo">Не можете решиться на путешествие из-за курса?<br>Фотографии помогут вам забыть о политике и экономике.</p>
@@ -44,7 +44,11 @@
       <section class="gallery">
         <ul class="gallery__list">
           <li class="gallery__item gallery-item gallery-item--first">
-            <img class="gallery-item__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x">
+              <img class="gallery-item__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@1x.jpg" alt="Дорога на закате">
+            </picture>
 
             <div class="gallery-item__wrapper">
               <div class="gallery-item__inner">
@@ -64,7 +68,11 @@
           </li>
 
           <li class="gallery__item gallery-item">
-            <img class="gallery-item__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Дорога во время заката">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x">
+              <img class="gallery-item__image" src="img/photo-cactus-mobile@1x.jpg" alt="Кактус">
+            </picture>
 
             <div class="gallery-item__wrapper">
               <div class="gallery-item__inner">
@@ -72,7 +80,7 @@
 
                 <p class="gallery-item__author">Автор фото: Сергей</p>
               </div>
-              
+
               <div class="gallery-item__counter counter">
                 <svg class="counter__icon" width="23" height="21" viewBox="0 0 23 21" fill="none">
                   <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
@@ -84,7 +92,11 @@
           </li>
 
           <li class="gallery__item gallery-item">
-            <img class="gallery-item__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x">
+              <img class="gallery-item__image" src="img/photo-roads-mobile@1x.jpg" alt="">
+            </picture>
 
             <div class="gallery-item__wrapper">
               <div class="gallery-item__inner">
@@ -104,7 +116,12 @@
           </li>
 
           <li class="gallery__item gallery-item">
-            <img class="gallery-item__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x">
+              <img class="gallery-item__image" src="img/photo-bridge-mobile@1x.jpg" alt="">
+            </picture>
+
 
             <div class="gallery-item__wrapper">
               <div class="gallery-item__inner">
@@ -134,9 +151,13 @@
       </section>
 
       <section class="gallery__video video">
-        <img class="video__pic" src="img/video-mobile@1x.jpg" width="320" height="201" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x">
+          <img class="video__pic" src="img/video-mobile@1x.jpg" alt="">
+        </picture>
 
-        <div class="gallery__video-menu video-menu ">
+        <div class="gallery__video-menu video-menu">
           <div class="video-menu__timeline">
             <!-- Здесь должен быть блок пролистывания видео -->
           </div>
