@@ -10,7 +10,11 @@
     <header class="page__header header">
       <div class="header__wrapper">
         <a class="header__logo" href="">
-          <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Город Седона">
+          <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg 1x">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg 1x">
+              <img src="img/logo-sedona-mobile.svg" alt="Город Седона">
+            </picture>
         </a>
       </div>
       <nav class="header__nav nav">
@@ -44,8 +48,8 @@
 
       <section class="features">
         <ul class="features__list">
-          <li class="feature feature--first">
-            <div class="feature__inner feature__inner--image">
+          <li class="feature feature--left">
+            <div class="feature__inner feature__inner--image feature__inner--left">
               <h2 class="feature__title feature__title--image">Настоящий городок</h2>
 
               <p class="feature__text feature__text--image">— №1 —</p>
@@ -75,14 +79,14 @@
               <li class="feature__list-item feature__list-item--food">
                 <h3>Еда</h3>
 
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p>Всегда заказывайте фирменный бургер,<br class="feature__list-item--food-break"> вы не разочаруетесь!</p>
               </li>
             </ul>
           </li>
 
-          <li class="feature feature--second">
-            <div class="feature__inner feature__inner--image">
-              <h2 class="feature__title feature__title--image">Там есть мост дьявола</h2>
+          <li class="feature feature--right">
+            <div class="feature__inner feature__inner--image feature__inner--right">
+              <h2 class="feature__title feature__title--image">Там есть<br> мост дьявола</h2>
 
               <p class="feature__text feature__text--image">— №2 —</p>
 
