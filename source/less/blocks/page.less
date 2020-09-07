@@ -1,8 +1,6 @@
 // Globals
 
 body {
-  width: 320px;
-
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -17,28 +15,15 @@ img {
 }
 
 .page__body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-items: center;
-  justify-content: center;
-}
+  max-width: @mobile-width;
+  min-height: 100%;
+  margin: 0 auto;
 
-.page__header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+  @media (min-width: @tablet-width) {
+    max-width: @tablet-width;
+  }
 
-.page__main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.page__footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: inherit;
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
+  }
 }

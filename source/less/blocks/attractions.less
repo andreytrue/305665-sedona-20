@@ -1,0 +1,86 @@
+/* Form attractions */
+
+.attractions {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.attractions legend {
+  @media (min-width: @tablet-width) {
+    width: 308px;
+  }
+}
+
+.attractions__list {
+  display: grid;
+  grid-template-columns: 216px;
+  gap: 54px;
+
+  margin: 0;
+  padding: 0;
+
+  margin-top: 36px;
+  margin-bottom: 39px;
+
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 216px 216px;
+    justify-content: center;
+    gap: 49px;
+
+    margin-top: 59px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 216px 216px 216px 216px;
+    gap: 36px;
+  }
+}
+
+.attractions__item {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
+  margin: 0;
+  padding-left: 80px;
+}
+
+.attractions__input + label::before {
+  content: "";
+  position: absolute;
+  left: -80px;
+  top: -12px;
+  width: 46px;
+  height: 46px;
+
+  background-color: @special-gray;
+  border-radius: 5%;
+}
+
+.attractions__input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -67px;
+  top: 3px;
+  width: 24px;
+  height: 17px;
+
+  background-image: url("../img/tick.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.attractions__item label {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+
+  margin: 0;
+  padding: 0;
+}
