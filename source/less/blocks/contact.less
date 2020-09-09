@@ -135,14 +135,20 @@
   position: absolute;
   content: "";
   width: 58px;
-  height: 57px;
+  height: 55px;
 
-  top: 34px;
+  top: 45px;
   right: 0;
 
   background-color: @dark-gray;
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: @tablet-width) {
+    width: 58px;
+    height: 57px;
+    top: 43px;
+  }
 
   @media (min-width: @desktop-width) {
     top: 0;
@@ -155,7 +161,7 @@
   width: 18px;
   height: 18px;
 
-  top: 53px;
+  top: 63px;
   right: 19px;
 
   background-image: url("../img/icon-phone.svg");
@@ -183,6 +189,7 @@
   background-position: 0 0;
 
   @media (min-width: @tablet-width) {
+    height: 57px;
     top: 58px;
   }
 
