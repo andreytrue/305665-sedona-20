@@ -95,6 +95,14 @@
   border-radius: 5%;
 }
 
+.attractions__input:hover + label::before {
+  background-color: @border-gray;
+}
+
+.attractions__input:active + label::before {
+  background-color: @button-active;
+}
+
 .attractions__input:checked + label::after {
   content: "";
   position: absolute;
@@ -106,6 +114,10 @@
   background-image: url("../img/tick.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.attractions__input:checked(:active) + label::after {
+  opacity: 0.3;
 }
 
 .attractions__item label {

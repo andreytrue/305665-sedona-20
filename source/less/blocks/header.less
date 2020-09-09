@@ -4,6 +4,7 @@
 }
 
 .header__wrapper {
+  position: relative;
   width: 100%;
   height: 56px;
 
@@ -20,6 +21,20 @@
 
   @media (min-width: @tablet-width) {
     margin-top: -54px;
+  }
+}
+
+.header__menu-icon {
+  @media (max-width: @tablet-width) {
+    position: absolute;
+    display: block;
+
+    top: 17px;
+    right: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 

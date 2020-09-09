@@ -70,6 +70,14 @@
   border-radius: 50%;
 }
 
+.survey__input:hover + label::before {
+  background-color: @border-gray;
+}
+
+.survey__input:active + label::before {
+  background-color: @button-active;
+}
+
 .survey__input:checked + label::after {
   content: "";
   position: absolute;
@@ -80,6 +88,10 @@
 
   background-color: @black;
   border-radius: 50%;
+}
+
+.survey__input:checked(:active) + label::after {
+  opacity: 0.3;
 }
 
 .survey__item label {

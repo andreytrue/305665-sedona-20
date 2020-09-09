@@ -4,7 +4,7 @@
   margin-top: -45px;
 
   @media (max-width: @tablet-width) {
-    margin: 3px 28px;
+    margin: 5px 28px;
   }
 
   @media (min-width: @tablet-width) {
@@ -31,6 +31,26 @@
   }
 }
 
+.video-menu__icon path:hover {
+  @media (max-width: @tablet-width) {
+    fill: @black;
+  }
+
+  @media (min-width: @tablet-width) {
+    opacity: 0.6;
+  }
+}
+
+.video-menu__icon path:active {
+  @media (max-width: @tablet-width) {
+    fill: @light-gray;
+  }
+
+  @media (min-width: @tablet-width) {
+    opacity: 0.3;
+  }
+}
+
 .video-menu__timeline {
   @media (max-width: @tablet-width) {
     order: -1;
@@ -52,6 +72,7 @@
 
   @media (max-width: @tablet-width) {
     margin: -8px;
+    margin-top: -11px;
   }
 
   @media (min-width: @tablet-width) {
@@ -97,7 +118,7 @@
   height: 45px;
 
   background-color: @black-video;
-  margin-top: -49px;
+  margin-top: -45px;
 
   @media (min-width: @tablet-width) {
     background-color: inherit;

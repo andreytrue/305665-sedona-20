@@ -97,6 +97,10 @@
   }
 }
 
+.contact__item input::placeholder {
+  color: @black;
+}
+
 .contact__item:first-of-type label {
   /*margin-top: 17px;*/
 }
@@ -170,6 +174,10 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 
+  @media (min-width: @tablet-width) {
+    top: 60px;
+  }
+
   @media (min-width: @desktop-width) {
     top: 0;
   }
@@ -187,6 +195,10 @@
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: @tablet-width) {
+    top: 79px;
+  }
 
   @media (min-width: @desktop-width) {
     top: 16px;
