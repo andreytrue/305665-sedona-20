@@ -50,7 +50,7 @@
   margin-right: 14px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 12px;
+    padding-top: 7px;
   }
 }
 
@@ -67,35 +67,38 @@
   padding-bottom: 18px;
 
   background-color: @special-gray;
-}
 
-/* Person item actions */
-.person__item input::placeholder {
-  color: @black;
-}
+  @media (min-width: @tablet-width) {
+    padding-left: 21px;
+  }
 
-.person__item input:hover {
-  background-color: @border-gray;
-}
+  &::placeholder {
+    color: @black;
+  }
 
-.person__item input:active {
-  background-color: @white;
-  border: 4px solid @border-gray;
-  box-sizing: border-box;
+  &:hover {
+    background-color: @border-gray;
+  }
+
+  &:active {
+    background-color: @white;
+    border: 4px solid @border-gray;
+    box-sizing: border-box;
+  }
 }
 
 .person__item:first-of-type {
   margin-top: 19px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 50px;
+    margin-top: 52px;
   }
 }
 
 .person__item:not(:last-of-type) {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .person__item:last-of-type {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }

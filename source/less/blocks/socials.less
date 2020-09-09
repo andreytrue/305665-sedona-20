@@ -18,6 +18,18 @@
   align-self: center;
   background-color: @blue;
   text-decoration: none;
+
+  &:hover {
+    background-color: @button-hover;
+  }
+
+  &:active {
+    background-color: @button-click;
+
+    svg {
+      opacity: 0.3;
+    }
+  }
 }
 
 .socials__item:nth-of-type(1) svg {
@@ -43,16 +55,4 @@
   margin-left: 13px;
 
   fill: @white;
-}
-
-.socials__item:hover {
-  background-color: @button-hover;
-}
-
-.socials__item:active {
-  background-color: @button-click;
-
-  svg {
-    opacity: 0.3;
-  }
 }

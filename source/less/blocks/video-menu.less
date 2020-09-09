@@ -3,7 +3,7 @@
   width: 100%;
   margin-top: -45px;
 
-  @media (max-width: @tablet-width) {
+  @media (max-width: @tablet-width - 1) {
     margin: 5px 28px;
   }
 
@@ -29,30 +29,30 @@
   @media (min-width: @tablet-width) {
     fill: @white;
   }
-}
 
-.video-menu__icon path:hover {
-  @media (max-width: @tablet-width) {
-    fill: @black;
+  &:hover {
+    @media (max-width: @tablet-width - 1) {
+      fill: @black;
+    }
+
+    @media (min-width: @tablet-width) {
+      opacity: 0.6;
+    }
   }
 
-  @media (min-width: @tablet-width) {
-    opacity: 0.6;
-  }
-}
+  &:active {
+    @media (max-width: @tablet-width - 1) {
+      fill: @light-gray;
+    }
 
-.video-menu__icon path:active {
-  @media (max-width: @tablet-width) {
-    fill: @light-gray;
-  }
-
-  @media (min-width: @tablet-width) {
-    opacity: 0.3;
+    @media (min-width: @tablet-width) {
+      opacity: 0.3;
+    }
   }
 }
 
 .video-menu__timeline {
-  @media (max-width: @tablet-width) {
+  @media (max-width: @tablet-width - 1) {
     order: -1;
     width: 100%;
   }
@@ -70,7 +70,7 @@
   margin: 0;
   padding: 0;
 
-  @media (max-width: @tablet-width) {
+  @media (max-width: @tablet-width - 1) {
     margin: -8px;
     margin-top: -11px;
   }
@@ -107,71 +107,5 @@
 
   @media (min-width: @desktop-width) {
     margin-right: 42px;
-  }
-}
-
-/* Video-menu timeline */
-
-.range-control {
-  position: relative;
-  width: 100%;
-  height: 45px;
-
-  background-color: @black-video;
-  margin-top: -45px;
-
-  @media (min-width: @tablet-width) {
-    background-color: inherit;
-    width: 389px;
-    margin: 0;
-    opacity: 1;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 540px;
-  }
-}
-
-.range-control .scale {
-  position: absolute;
-  height: 3px;
-  width: 235px;
-
-  top: 22px;
-  left: 22px;
-
-  background-color: @white;
-  opacity: 0.2;
-
-  @media (min-width: @tablet-width) {
-    left: 0;
-    width: 389px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 20px;
-    width: 540px;
-  }
-}
-
-.range-control .toggle {
-  position: absolute;
-  top: 18px;
-  left: 57px;
-
-  width: 10px;
-  height: 10px;
-  padding: 0;
-  background-color: @white;
-  opacity: 1;
-  border-radius: 50%;
-  cursor: pointer;
-
-  @media (min-width: @tablet-width) {
-    left: 111px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 15px;
   }
 }

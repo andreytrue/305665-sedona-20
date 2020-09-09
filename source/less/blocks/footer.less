@@ -76,11 +76,13 @@
   right: -40px;
 }
 
-.footer__link-logo path:hover {
-  fill: @blue;
-}
+.footer__link-logo path {
+  &:hover {
+    fill: @blue;
+  }
 
-.footer__link-logo path:active {
-  fill: black;
-  opacity: 0.3;
+  &:active {
+    fill: black;
+    opacity: 0.3;
+  }
 }
