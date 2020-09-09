@@ -1,6 +1,36 @@
 /* Map */
 
 .map {
+  position: relative;
   display: block;
   width: 100%;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    width: 27px;
+    height: 27px;
+
+    top: 45%;
+    left: 46%;
+
+    background-image: url("../img/map-marker.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      top: 46.2%;
+      left: 48.2%;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      top: 45.6%;
+      left: 48.8%;
+    }
+  }
 }

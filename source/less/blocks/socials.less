@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.socials--photo {
+  @media (min-width: @tablet-width) {
+    margin-top: -39px;
+  }
+}
+
 .socials__item {
   display: block;
   width: 46px;
@@ -37,4 +43,16 @@
   margin-left: 13px;
 
   fill: @white;
+}
+
+.socials__item:hover {
+  background-color: @button-hover;
+}
+
+.socials__item:active {
+  background-color: @button-click;
+
+  svg {
+    opacity: 0.3;
+  }
 }

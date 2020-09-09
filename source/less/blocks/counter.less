@@ -9,6 +9,10 @@
   margin: 0;
   margin-left: 14px;
 
+  @media (min-width: @tablet-width) {
+    margin-left: 9px;
+  }
+
   @media (min-width: @desktop-width) {
     color: @white;
   }
@@ -16,7 +20,7 @@
 
 .counter__icon {
   @media (min-width: @tablet-width) {
-    margin-top: 5px;
+    margin-top: -1px;
   }
 }
 
@@ -24,5 +28,17 @@
   @media (min-width: @desktop-width) {
     fill: @white;
     opacity: 1;
+  }
+}
+
+.counter__left {
+  @media (min-width: @tablet-width) {
+    padding-right: 29px;
+  }
+}
+
+.counter__right {
+  @media (min-width: @tablet-width) {
+    padding-right: 36px;
   }
 }

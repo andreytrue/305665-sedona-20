@@ -11,9 +11,12 @@
 
   padding: 0;
   margin: 0;
-  margin-top: 20px;
 
   border: none;
+
+  @media (max-width: @tablet-width) {
+    margin-top: 20px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-top: 0;
@@ -53,6 +56,12 @@
   margin-bottom: 51px;
 }
 
+.form__emotions legend {
+  @media (min-width: @tablet-width) {
+    padding-top: 31px;
+  }
+}
+
 .form__emotions-item {
   display: block;
 
@@ -63,9 +72,9 @@
 
   height: 118px;
 
-  width: 279px;
+  width: 229px;
 
-  padding: 13px 21px 23px 29px;
+  padding: 13px 29px 28px 20px;
 
   margin-top: 15px;
 
@@ -79,6 +88,9 @@
   @media (min-width: @tablet-width) {
     width: 598px;
     margin-top: 54px;
+
+    padding-top: 19px;
+    padding-bottom: 21px;
   }
 
   @media (min-width: @desktop-width) {
@@ -92,7 +104,8 @@
   display: block;
   align-self: center;
 
-  font-size: 21px;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-decoration: none;
@@ -103,9 +116,8 @@
   padding: 19px 0 13px;
 
   margin: 0;
-  margin-left: 19px;
   margin-top: 51px;
-  margin-bottom: 49px;
+  margin-bottom: 45px;
 
   border: none;
 
@@ -115,10 +127,15 @@
     margin-left: 0;
     width: 324px;
     margin-top: 58px;
+
+    padding-top: 21px;
+    padding-left: 10px;
   }
 
   @media (min-width: @desktop-width) {
     width: 480px;
+    padding-top: 19px;
+    padding-left: 0;
     margin-bottom: 66px;
   }
 }
@@ -137,6 +154,7 @@
 
   @media (max-width: @tablet-width) {
     display: none;
+    margin-top: 80px;
   }
 
   @media (min-width: @desktop-width) {

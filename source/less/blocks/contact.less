@@ -4,7 +4,12 @@
   width: 100%;
 }
 
+.contact legend {
+  padding-top: 49px;
+}
+
 .contact__list {
+  position: relative;
   list-style: none;
 
   margin: 0;
@@ -30,6 +35,7 @@
 }
 
 .contact__item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -42,8 +48,6 @@
 }
 
 .contact__item:first-of-type {
-  margin-bottom: 28px;
-
   @media (min-width: @desktop-width) {
     margin: 0;
   }
@@ -56,8 +60,8 @@
   margin: 0;
   padding: 0;
 
-  margin-left: 42px;
-  margin-bottom: 8px;
+  margin-left: 22px;
+  margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
     margin-left: 22px;
@@ -69,8 +73,13 @@
   }
 }
 
+.contact__item--tel-label span {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .contact__item input {
-  position: relative;
   display: block;
 
   font-family: inherit;
@@ -83,35 +92,103 @@
   border: none;
   background-color: @special-gray;
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 58px;
-    height: 58px;
-
-    top: 0;
-    right: 0;
-
-    background-color: @dark-gray;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
   @media (min-width: @desktop-width) {
-    width: 315px;
+    width: 294px;
   }
 }
 
 .contact__item:first-of-type label {
-  margin-top: 17px;
+  /*margin-top: 17px;*/
 }
 
 .contact__item:last-of-type label {
   margin-top: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .contact__item-phone {
   @media (min-width: @desktop-width) {
     display: none;
+  }
+}
+
+/* Phone icon */
+.contact__item--tel::before {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 55px;
+
+  top: 36px;
+  right: 0;
+
+  background-color: @dark-gray;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: @desktop-width) {
+    top: 0;
+  }
+}
+
+.contact__item--tel::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+
+  top: 53px;
+  right: 19px;
+
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: @desktop-width) {
+    top: 16px;
+  }
+}
+
+/* Email icon */
+.contact__item--email::before {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 55px;
+
+  top: 50px;
+  right: 0;
+
+  background-color: @dark-gray;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: @desktop-width) {
+    top: 0;
+  }
+}
+
+.contact__item--email::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+
+  top: 67px;
+  right: 19px;
+
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: @desktop-width) {
+    top: 16px;
   }
 }

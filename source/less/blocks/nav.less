@@ -2,6 +2,7 @@
 
 .nav {
   order: -1;
+  z-index: 5;
 }
 
 .nav__list {
@@ -50,7 +51,8 @@
 
 .nav__item:nth-of-type(2) {
   @media (min-width: @tablet-width) {
-    margin-right: 156px;
+    margin-right: 162px;
+    padding-left: 6px;
   }
 
   @media (min-width: @desktop-width) {
@@ -79,6 +81,31 @@
   }
 
   @media (min-width: @tablet-width) {
+    font-size: 14px;
     color: @black;
+
+    padding-top: 9px;
+  }
+}
+
+.nav__item a:hover {
+  @media (max-width: @tablet-width) {
+    background-color: @button-hover;
+  }
+
+  @media (min-width: @tablet-width) {
+    color: @blue;
+  }
+}
+
+.nav__item a:active {
+  @media (max-width: @tablet-width) {
+    background-color: @button-click;
+    color: @button-text-click;
+  }
+
+  @media (min-width: @tablet-width) {
+    color: @black;
+    opacity: 0.3;
   }
 }

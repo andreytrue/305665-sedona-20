@@ -13,23 +13,23 @@
           <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg 1x">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg 1x">
-              <img src="img/logo-sedona-mobile.svg" alt="Город Седона">
+              <img src="img/logo-sedona-mobile.svg" alt="Логотип города Седона">
           </picture>
         </a>
       </div>
       <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="nav__item">
-            <a href="">Фото и видео</a>
+            <a href="photo.html">Фото и видео</a>
           </li>
           <li class="nav__item">
-            <a href="">Форма отзыва</a>
+            <a href="form.html">Форма отзыва</a>
           </li>
           <li class="nav__item">
-            <a href="">HTML Academy</a>
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -76,12 +76,12 @@
             <legend>Контактная информация:</legend>
 
             <ul class="contact__list">
-              <li class="contact__item">
-                <label for="phone"><span class="contact__item-phone">Контактный</span> телефон*:</label>
+              <li class="contact__item contact__item--tel">
+                <label class="contact__item--tel-label" for="phone"><span>Контактный</span> телефон*:</label>
                 <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
               </li>
 
-              <li class="contact__item">
+              <li class="contact__item contact__item--email">
                 <label for="mail">Электронная почта*:</label>
                 <input type="email" name="mail" id="mail" placeholder="Введите e-mail" required>
               </li>
@@ -148,7 +148,7 @@
       </section>
     </main>
 
-    <footer class="page__footer footer">
+    <footer class="page__footer footer footer--index">
       <h2 class="footer__title">#visitsedona</h2>
 
       <div class="footer__socials socials">

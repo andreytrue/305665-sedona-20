@@ -11,7 +11,7 @@
       width: 1px;
       height: 292px;
       top: 0;
-      right: -65px;
+      right: -52px;
 
       background-color: @line-gray;
       background-repeat: no-repeat;
@@ -20,7 +20,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 374px;
+    width: 352px;
 
     &::after {
       right: -127px;
@@ -29,6 +29,10 @@
 }
 
 .survey legend {
+  @media (max-width: @tablet-width) {
+    margin-left: 47px;
+  }
+
   @media (min-width: @desktop-width) {
     text-align: right;
   }
@@ -40,10 +44,10 @@
   margin: 0;
   padding: 0;
 
-  margin-bottom: 41px;
+  margin-bottom: -4px;
 
   @media (max-width: @tablet-width) {
-    margin-top: 37px;
+    margin-top: 25px;
   }
 }
 
@@ -57,10 +61,10 @@
 .survey__input + label::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: -12px;
-  width: 48px;
-  height: 48px;
+  left: 1px;
+  top: -17px;
+  width: 54px;
+  height: 54px;
 
   background-color: @special-gray;
   border-radius: 50%;
@@ -69,10 +73,10 @@
 .survey__input:checked + label::after {
   content: "";
   position: absolute;
-  left: 15px;
-  top: 3px;
-  width: 18px;
-  height: 18px;
+  left: 17px;
+  top: -1px;
+  width: 22px;
+  height: 22px;
 
   background-color: @black;
   border-radius: 50%;
@@ -88,26 +92,22 @@
   margin: 0;
   padding: 0;
 
-  padding-left: 102px;
-
-  @media (min-width: @desktop-width) {
-    padding-left: 78px;
-  }
+  padding-left: 78px;
 }
 
 .survey__item:first-child {
-  padding-top: 17px;
+  padding-top: 13px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 53px;
+    padding-top: 73px;
   }
 }
 
 .survey__item:not(:last-child) {
-  padding-bottom: 43px;
+  padding-bottom: 42px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 45px;
+    padding-bottom: 52px;
   }
 }
 
