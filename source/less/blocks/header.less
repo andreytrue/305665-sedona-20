@@ -68,6 +68,11 @@
       background-repeat: no-repeat;
       background-position: 0 0;
     }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: 766px auto;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -78,7 +83,7 @@
     margin-top: -56px;
 
     &::after {
-      bottom: 3px;
+      bottom: 2px;
 
       background-image: url("../img/bg-intro-triangle-tablet.svg");
       background-repeat: no-repeat;
@@ -95,7 +100,6 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
 
     &::after {
-      bottom: 2px;
       position: absolute;
       content: "";
       width: 100%;
