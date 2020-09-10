@@ -2,6 +2,7 @@
 
 .nav {
   order: -1;
+  z-index: 5;
 }
 
 .nav__list {
@@ -12,7 +13,7 @@
   padding: 0;
   margin: 0;
 
-  @media (max-width: @tablet-width) {
+  @media (max-width: @tablet-width - 1) {
     flex-direction: column;
     width: @mobile-width;
 
@@ -44,17 +45,19 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 239px;
+    width: 237px;
   }
 }
 
 .nav__item:nth-of-type(2) {
   @media (min-width: @tablet-width) {
-    margin-right: 156px;
+    margin-right: 162px;
+    padding-left: 6px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 244px;
+    margin-right: 248px;
+    padding-left: 2px;
   }
 }
 
@@ -79,6 +82,31 @@
   }
 
   @media (min-width: @tablet-width) {
+    font-size: 14px;
     color: @black;
+
+    padding-top: 9px;
+  }
+
+  &:hover {
+    @media (max-width: @tablet-width - 1) {
+      background-color: @button-hover;
+    }
+
+    @media (min-width: @tablet-width) {
+      color: @blue;
+    }
+  }
+
+  &:active {
+    @media (max-width: @tablet-width - 1) {
+      background-color: @button-click;
+      color: @button-text-click;
+    }
+
+    @media (min-width: @tablet-width) {
+      color: @black;
+      opacity: 0.3;
+    }
   }
 }

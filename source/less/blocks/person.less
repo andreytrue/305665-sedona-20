@@ -3,10 +3,11 @@
 .person {
   @media (min-width: @tablet-width) {
     width: 266px;
+    margin-top: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 420px;
+    width: 400px;
   }
 }
 
@@ -24,7 +25,7 @@
   padding: 0;
 
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: -4px;
 }
 
 .person__item {
@@ -46,10 +47,10 @@
   margin: 0;
   padding: 0;
 
-  margin-right: 12px;
+  margin-right: 14px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 12px;
+    padding-top: 7px;
   }
 }
 
@@ -59,28 +60,45 @@
   font-weight: bold;
   font-size: 16px;
   border: none;
-
   width: 100%;
 
-  padding-left: 22px;
-  padding-top: 18px;
-  padding-bottom: 14px;
+  padding-left: 23px;
+  padding-top: 23px;
+  padding-bottom: 18px;
 
   background-color: @special-gray;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 21px;
+  }
+
+  &::placeholder {
+    color: @black;
+  }
+
+  &:hover {
+    background-color: @border-gray;
+  }
+
+  &:active {
+    background-color: @white;
+    border: 4px solid @border-gray;
+    box-sizing: border-box;
+  }
 }
 
 .person__item:first-of-type {
   margin-top: 19px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 36px;
+    margin-top: 52px;
   }
 }
 
 .person__item:not(:last-of-type) {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .person__item:last-of-type {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }

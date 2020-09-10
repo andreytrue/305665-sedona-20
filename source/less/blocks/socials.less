@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.socials--photo {
+  @media (min-width: @tablet-width) {
+    margin-top: -39px;
+  }
+}
+
 .socials__item {
   display: block;
   width: 46px;
@@ -12,6 +18,18 @@
   align-self: center;
   background-color: @blue;
   text-decoration: none;
+
+  &:hover {
+    background-color: @button-hover;
+  }
+
+  &:active {
+    background-color: @button-click;
+
+    svg {
+      opacity: 0.3;
+    }
+  }
 }
 
 .socials__item:nth-of-type(1) svg {

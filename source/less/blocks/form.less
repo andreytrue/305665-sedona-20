@@ -11,9 +11,12 @@
 
   padding: 0;
   margin: 0;
-  margin-top: 20px;
 
   border: none;
+
+  @media (max-width: @tablet-width - 1) {
+    margin-top: 20px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-top: 0;
@@ -37,7 +40,7 @@
 }
 
 .form fieldset:not(:last-of-type) {
-  @media (max-width: @tablet-width) {
+  @media (max-width: @tablet-width - 1) {
     border-bottom: 1px solid @border-gray;
   }
 }
@@ -53,6 +56,12 @@
   margin-bottom: 51px;
 }
 
+.form__emotions legend {
+  @media (min-width: @tablet-width) {
+    padding-top: 31px;
+  }
+}
+
 .form__emotions-item {
   display: block;
 
@@ -63,9 +72,9 @@
 
   height: 118px;
 
-  width: 279px;
+  width: 229px;
 
-  padding: 13px 21px 23px 29px;
+  padding: 13px 29px 28px 20px;
 
   margin-top: 15px;
 
@@ -79,11 +88,20 @@
   @media (min-width: @tablet-width) {
     width: 598px;
     margin-top: 54px;
+    padding-top: 19px;
+    padding-bottom: 21px;
   }
 
   @media (min-width: @desktop-width) {
     width: 910px;
+    margin-top: 51px;
+    padding-top: 18px;
+    padding-bottom: 24px;
   }
+}
+
+.form__emotions-item::placeholder {
+  color: @black;
 }
 
 /* Form button */
@@ -92,6 +110,7 @@
   display: block;
   align-self: center;
 
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -103,23 +122,28 @@
   padding: 19px 0 13px;
 
   margin: 0;
-  margin-left: 19px;
   margin-top: 51px;
-  margin-bottom: 49px;
+  margin-bottom: 45px;
 
   border: none;
 
   background-color: @blue;
 
   @media (min-width: @tablet-width) {
-    margin-left: 0;
     width: 324px;
+    margin-left: 0;
     margin-top: 58px;
+    margin-bottom: 69px;
+
+    padding-top: 21px;
+    padding-right: 9px;
   }
 
   @media (min-width: @desktop-width) {
     width: 480px;
-    margin-bottom: 66px;
+    padding-top: 19px;
+    padding-right: 0;
+    margin-bottom: 74px;
   }
 }
 
@@ -133,9 +157,9 @@
 
   width: 161px;
   margin: 0;
-  margin-top: 78px;
+  margin-top: 80px;
 
-  @media (max-width: @tablet-width) {
+  @media (max-width: @tablet-width - 1) {
     display: none;
   }
 

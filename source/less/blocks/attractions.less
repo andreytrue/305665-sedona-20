@@ -3,12 +3,17 @@
 .attractions {
   @media (min-width: @tablet-width) {
     width: 100%;
+    margin-top: 16px;
   }
 }
 
 .attractions legend {
   @media (min-width: @tablet-width) {
     width: 308px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 24px;
   }
 }
 
@@ -27,8 +32,9 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: 216px 216px;
     justify-content: center;
-    gap: 49px;
+    gap: 62px;
 
+    margin-left: 12px;
     margin-top: 59px;
     margin-bottom: 54px;
   }
@@ -47,31 +53,75 @@
 
   margin: 0;
   padding-left: 80px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 91px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 71px;
+  }
+}
+
+.attractions__item:nth-of-type(2n) {
+  @media (min-width: @tablet-width) {
+    padding-left: 75px;
+  }
+}
+
+.attractions__item:nth-of-type(2) {
+  @media (min-width: @desktop-width) {
+    padding-left: 77px;
+  }
+}
+
+.attractions__item:nth-of-type(3) {
+  @media (min-width: @desktop-width) {
+    padding-left: 83px;
+  }
+}
+
+.attractions__item:nth-of-type(4) {
+  @media (min-width: @desktop-width) {
+    padding-left: 70px;
+  }
 }
 
 .attractions__input + label::before {
   content: "";
   position: absolute;
   left: -80px;
-  top: -12px;
-  width: 46px;
-  height: 46px;
+  top: -17px;
+  width: 55px;
+  height: 55px;
 
   background-color: @special-gray;
   border-radius: 5%;
+
+  &:hover {
+    background-color: @border-gray;
+  }
+
+  &:active {
+    background-color: @button-active;
+  }
 }
 
 .attractions__input:checked + label::after {
   content: "";
   position: absolute;
-  left: -67px;
-  top: 3px;
+  left: -64px;
+  top: 4px;
   width: 24px;
   height: 17px;
 
   background-image: url("../img/tick.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .attractions__item label {
