@@ -10,6 +10,8 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
 const rename = require("gulp-rename");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
 
 // Styles
 
@@ -101,12 +103,23 @@ const clean = () => {
 
 exports.clean = clean;
 
+// HTMLmin
+
+const htmlshort = () => {
+  return gulp.src("source/*.html")
+  .pipe(htmlmin({collapseWhitespace: true}))
+  .pipe(gulp.dest("build"));
+};
+
+exports.htmlmin = htmlshort;
+
 // Build
 
 const build = gulp.series(
     clean,
     copy,
-    styles
+    styles,
+    htmlshort
 );
 
 exports.build = build;
