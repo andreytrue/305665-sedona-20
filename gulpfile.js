@@ -60,9 +60,10 @@ exports.default = gulp.series(
 // Images
 
 const images = () => {
-return gulp.src("source/img/**/*.{jpg,png,svg}")
-.pipe(imagemin([ imagemin.optipng({optimizationLevel: 3}),
-])) }
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([ imagemin.optipng({optimizationLevel: 3}),
+    ]))
+}
 
 exports.images = images;
 
