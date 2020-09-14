@@ -36,10 +36,39 @@
 }
 
 .gallery__item {
+  position: relative;
   list-style: none;
   padding: 0;
 
   @media (max-width: @tablet-width - 1) {
     margin: 24px 0 15px;
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      bottom: -17px;
+      left: -20px;
+
+      width: 320px;
+      height: 1px;
+      background-color: @border-gray;
+    }
+  }
+}
+
+.gallery__item:first-of-type {
+  @media (max-width: @tablet-width - 1) {
+    &::before {
+      position: absolute;
+      content: "";
+
+      top: -23px;
+      left: -20px;
+
+      width: 320px;
+      height: 1px;
+      background-color: @border-gray;
+    }
   }
 }

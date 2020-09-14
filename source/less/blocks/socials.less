@@ -2,11 +2,19 @@
   display: flex;
   flex: wrap;
   align-items: center;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 8px;
+  }
 }
 
 .socials--photo {
   @media (min-width: @tablet-width) {
     margin-top: -39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -17px;
   }
 }
 

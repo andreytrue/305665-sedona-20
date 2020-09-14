@@ -37,7 +37,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -72,8 +72,8 @@ exports.images = images;
 // WebP
 
 const createWebp = () => {
-return gulp.src("source/img/**/*.{png,jpg}")
-.pipe(webp({quality: 90})) .pipe(gulp.dest("source/img"))
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90})) .pipe(gulp.dest("source/img"))
 }
 
 exports.webp = createWebp;
@@ -108,8 +108,8 @@ exports.clean = clean;
 
 const htmlshort = () => {
   return gulp.src("source/*.html")
-  .pipe(htmlmin({collapseWhitespace: true }))
-  .pipe(gulp.dest("build"));
+    .pipe(htmlmin({collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
 };
 
 exports.htmlmin = htmlshort;
@@ -117,10 +117,10 @@ exports.htmlmin = htmlshort;
 // Build
 
 const build = gulp.series(
-    clean,
-    copy,
-    styles,
-    htmlshort
+  clean,
+  copy,
+  styles,
+  htmlshort
 );
 
 exports.build = build;

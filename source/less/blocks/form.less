@@ -15,7 +15,7 @@
   border: none;
 
   @media (max-width: @tablet-width - 1) {
-    margin-top: 20px;
+    margin-top: 19px;
   }
 
   @media (min-width: @desktop-width) {
@@ -31,7 +31,7 @@
   line-height: 26px;
   text-align: center;
 
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   @media (min-width: @tablet-width) {
@@ -41,7 +41,39 @@
 
 .form fieldset:not(:last-of-type) {
   @media (max-width: @tablet-width - 1) {
-    border-bottom: 1px solid @border-gray;
+    &::after {
+      position: absolute;
+      content: "";
+
+      bottom: -1px;
+      left: -20px;
+
+      width: 320px;
+      height: 1px;
+      background-color: @border-gray;
+    }
+  }
+}
+
+.form fieldset:nth-of-type(3) {
+  @media (max-width: @tablet-width - 1) {
+    &::after {
+      bottom: -7px;
+    }
+  }
+}
+
+.form fieldset:nth-of-type(4) {
+  @media (max-width: @tablet-width - 1) {
+    &::after {
+      bottom: -2px;
+    }
+  }
+}
+
+.form fieldset:last-of-type {
+  @media (max-width: @tablet-width - 1) {
+    margin-top: 22px;
   }
 }
 
@@ -54,11 +86,67 @@
   padding: 0;
 
   margin-bottom: 51px;
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 123px;
+      height: 1px;
+
+      left: 0;
+      top: 36px;
+
+      background-color: @line-gray;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 123px;
+      height: 1px;
+
+      right: 0;
+      top: 36px;
+
+      background-color: @line-gray;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 280px;
+      height: 1px;
+
+      left: 0;
+      top: 37px;
+
+      background-color: @line-gray;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 280px;
+      height: 1px;
+
+      right: 0;
+      top: 37px;
+
+      background-color: @line-gray;
+    }
+  }
 }
 
 .form__emotions legend {
   @media (min-width: @tablet-width) {
-    padding-top: 31px;
+    padding-top: 28px;
   }
 }
 
@@ -74,9 +162,9 @@
 
   width: 229px;
 
-  padding: 13px 29px 28px 20px;
+  padding: 13px 29px 26px 20px;
 
-  margin-top: 15px;
+  margin-top: 14px;
 
   background-color: @special-gray;
   background-repeat: no-repeat;
@@ -94,7 +182,7 @@
 
   @media (min-width: @desktop-width) {
     width: 910px;
-    margin-top: 51px;
+    margin-top: 54px;
     padding-top: 18px;
     padding-bottom: 24px;
   }
@@ -132,7 +220,7 @@
   @media (min-width: @tablet-width) {
     width: 324px;
     margin-left: 0;
-    margin-top: 58px;
+    margin-top: 60px;
     margin-bottom: 69px;
 
     padding-top: 21px;
@@ -155,7 +243,7 @@
   line-height: 26px;
   color: @light-gray;
 
-  width: 161px;
+  width: 163px;
   margin: 0;
   margin-top: 80px;
 

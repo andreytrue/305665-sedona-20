@@ -4,6 +4,60 @@
   @media (min-width: @tablet-width) {
     width: 100%;
     margin-top: 16px;
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 123px;
+      height: 1px;
+
+      left: 0;
+      top: 22px;
+
+      background-color: @line-gray;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 123px;
+      height: 1px;
+
+      right: 0;
+      top: 22px;
+
+      background-color: @line-gray;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 280px;
+      height: 1px;
+
+      left: 0;
+      top: 25px;
+
+      background-color: @line-gray;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 280px;
+      height: 1px;
+
+      right: 25px;
+      top: 25px;
+
+      background-color: @line-gray;
+    }
   }
 }
 
@@ -13,6 +67,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: -1px;
     padding-right: 24px;
   }
 }
@@ -48,7 +103,6 @@
 .attractions__item {
   position: relative;
   display: block;
-  cursor: pointer;
   user-select: none;
 
   margin: 0;
@@ -59,7 +113,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 71px;
+    padding-left: 69px;
   }
 }
 
@@ -71,19 +125,19 @@
 
 .attractions__item:nth-of-type(2) {
   @media (min-width: @desktop-width) {
-    padding-left: 77px;
+    padding-left: 76px;
   }
 }
 
 .attractions__item:nth-of-type(3) {
   @media (min-width: @desktop-width) {
-    padding-left: 83px;
+    padding-left: 81px;
   }
 }
 
 .attractions__item:nth-of-type(4) {
   @media (min-width: @desktop-width) {
-    padding-left: 70px;
+    padding-left: 68px;
   }
 }
 
@@ -91,12 +145,23 @@
   content: "";
   position: absolute;
   left: -80px;
-  top: -17px;
+  top: -14px;
   width: 55px;
-  height: 55px;
+  height: 56px;
 
   background-color: @special-gray;
   border-radius: 5%;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    left: -81px;
+    top: -17px;
+    width: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -16px;
+  }
 
   &:hover {
     background-color: @border-gray;
@@ -111,16 +176,21 @@
   content: "";
   position: absolute;
   left: -64px;
-  top: 4px;
+  top: 6px;
   width: 24px;
   height: 17px;
 
   background-image: url("../img/tick.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  cursor: pointer;
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 3px;
   }
 }
 
