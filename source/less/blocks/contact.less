@@ -1,12 +1,75 @@
 /* Form contact */
 
 .contact {
+  position: relative;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 123px;
+      height: 1px;
+
+      left: 0;
+      top: 55px;
+
+      background-color: @line-gray;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 123px;
+      height: 1px;
+
+      right: 0;
+      top: 55px;
+
+      background-color: @line-gray;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 280px;
+      height: 1px;
+
+      left: 0;
+      top: 52px;
+
+      background-color: @line-gray;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 280px;
+      height: 1px;
+
+      right: 0;
+      top: 52px;
+
+      background-color: @line-gray;
+    }
+  }
 }
 
 .contact legend {
+  padding: 0;
+
   @media (min-width: @tablet-width) {
-    padding-top: 49px;
+    padding-top: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 44px;
   }
 }
 
@@ -18,12 +81,12 @@
   padding: 0;
 
   @media (max-width: @tablet-width - 1) {
-    margin-top: 17px;
+    margin-top: 8px;
     margin-bottom: 28px;
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: 20px;
+    margin-top: 11px;
     margin-bottom: 51px;
   }
 
@@ -31,8 +94,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 68px;
-    margin-bottom: 54px;
+    margin-top: 73px;
+    margin-bottom: 50px;
   }
 }
 
@@ -87,6 +150,7 @@
 
   font-family: inherit;
   font-size: 18px;
+  line-height: 26px;
   font-weight: bold;
 
   width: 100%;
@@ -101,26 +165,47 @@
 
   @media (min-width: @desktop-width) {
     width: 294px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+  }
+}
+
+.contact__item--tel input {
+  @media (max-width: @tablet-width - 1) {
+    padding: 19px 0 15px 22px;
+  }
+}
+
+.contact__item--email input {
+  @media (max-width: @tablet-width - 1) {
+    padding: 18px 0 17px 22px;
   }
 }
 
 .contact__item input::placeholder {
+  font-family: "PT Sans", "Tahoma", sans-serif;
   color: @black;
 }
 
 .contact__item:first-of-type label {
   margin-top: 9px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .contact__item:last-of-type label {
-  margin-top: 14px;
+  margin-top: 12px;
+  margin-bottom: 6px;
 
   @media (min-width: @tablet-width) {
     margin-top: 24px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 6px;
+    margin-top: 14px;
+    padding-right: 3px;
   }
 }
 
@@ -135,7 +220,7 @@
   position: absolute;
   content: "";
   width: 58px;
-  height: 55px;
+  height: 58px;
 
   top: 45px;
   right: 0;
@@ -143,12 +228,6 @@
   background-color: @dark-gray;
   background-repeat: no-repeat;
   background-position: 0 0;
-
-  @media (min-width: @tablet-width) {
-    width: 58px;
-    height: 57px;
-    top: 43px;
-  }
 
   @media (min-width: @desktop-width) {
     top: 0;
@@ -161,7 +240,7 @@
   width: 18px;
   height: 18px;
 
-  top: 63px;
+  top: 65px;
   right: 19px;
 
   background-image: url("../img/icon-phone.svg");
@@ -179,9 +258,9 @@
   position: absolute;
   content: "";
   width: 58px;
-  height: 55px;
+  height: 58px;
 
-  top: 50px;
+  top: 44px;
   right: 0;
 
   background-color: @dark-gray;
@@ -204,7 +283,7 @@
   width: 18px;
   height: 18px;
 
-  top: 67px;
+  top: 65px;
   right: 19px;
 
   background-image: url("../img/icon-mail.svg");

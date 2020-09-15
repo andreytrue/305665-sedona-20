@@ -73,6 +73,7 @@
   @media (min-width: @tablet-width) {
     font-size: 21px;
     margin-top: 40px;
+    margin-bottom: 13px;
   }
 }
 
@@ -231,13 +232,6 @@
   }
 }
 
-/* Text break for feature food on*/
-.feature__list-item--food-break {
-  @media (max-width: @tablet-width - 1) {
-    display: none;
-  }
-}
-
 /* Icon & mobile margin for feature souvenir */
 .feature__list-item--souvenir {
   &::before {
@@ -282,6 +276,12 @@
 
 .feature__list-item--souvenir br {
   @media (max-width: @desktop-width - 1) {
+    display: none;
+  }
+}
+
+.feature__list-item--food br {
+  @media (max-width: @tablet-width - 1) {
     display: none;
   }
 }
@@ -449,7 +449,7 @@
 
 .feature__text--image:first-of-type {
   @media (min-width: @tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 }
 
@@ -488,8 +488,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 42px;
-    padding-bottom: 40px;
+    padding-top: 44px;
+    padding-bottom: 38px;
   }
 
   @media (min-width: @desktop-width) {
@@ -498,6 +498,8 @@
 }
 
 .feature:nth-of-type(3) .feature__title {
+  padding-top: 24px;
+
   @media (min-width: @tablet-width) {
     padding: 0 34px;
     margin-top: 0;
@@ -511,7 +513,7 @@
 .feature:nth-of-type(3) .feature__text {
   @media (min-width: @tablet-width) {
     padding: 0 34px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 }
 
@@ -542,6 +544,8 @@
 }
 
 .feature:nth-of-type(4) .feature__title {
+  padding-top: 26px;
+
   @media (min-width: @tablet-width) {
     padding: 0 60px;
     margin-top: 0;
@@ -555,7 +559,8 @@
 .feature:nth-of-type(4) .feature__text {
   @media (min-width: @tablet-width) {
     padding: 0 60px;
-    margin-bottom: 25px;
+    padding-left: 57px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -590,6 +595,8 @@
 }
 
 .feature:nth-of-type(5) .feature__title {
+  padding-top: 27px;
+
   @media (min-width: @tablet-width) {
     padding: 0 70px;
     margin-top: 6px;
@@ -600,9 +607,16 @@
   }
 }
 
-.feature:nth-of-type(5) .feature__text {
+.feature:nth-of-type(5) .feature__text:first-of-type {
   @media (min-width: @tablet-width) {
     padding: 0 55px;
+    margin-bottom: 21px;
+  }
+}
+
+.feature:nth-of-type(5) .feature__text:last-of-type {
+  @media (min-width: @tablet-width) {
+    padding: 0 54px;
     margin-bottom: 24px;
   }
 }
