@@ -4,12 +4,20 @@
   align-items: center;
   width: 320px;
 
+  margin: 0 auto;
+
   font-family: "PT Sans", "Tahoma", sans-serif;
   background-color: @special-gray;
   box-shadow: 0 7px 15px @popup-shadow;
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.success--open {
+  @media (max-width: @tablet-width - 1) {
+    display: flex;
   }
 }
 
@@ -61,8 +69,4 @@
   padding-left: 75px;
 
   background-color: @blue;
-}
-
-.success--close {
-  display: none;
 }

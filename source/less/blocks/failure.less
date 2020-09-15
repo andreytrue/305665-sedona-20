@@ -7,8 +7,9 @@
   text-transform: uppercase;
   text-align: center;
 
+  margin: 10px auto;
+
   width: 320px;
-  margin: 10px 0;
   background-color: @white;
   box-shadow: 0 7px 15px @popup-shadow;
 
@@ -18,7 +19,9 @@
 }
 
 .failure--open {
-  display: flex;
+  @media (max-width: @tablet-width - 1) {
+    display: flex;
+  }
 }
 
 .failure__wrapper {

@@ -1,9 +1,13 @@
 // Page
 
 .page__body {
-  max-width: @mobile-width;
   min-height: 100%;
   width: 100%;
+  margin: 0 auto;
+}
+
+.page__main--subpage {
+  max-width: @mobile-width;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -11,6 +15,21 @@
   }
 
   @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
+  }
+}
+
+.page__footer {
+  max-width: @mobile-width;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
+    max-width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 120px;
     max-width: @desktop-width;
   }
 }
