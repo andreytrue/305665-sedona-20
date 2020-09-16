@@ -3,73 +3,73 @@
 .contact {
   position: relative;
   width: 100%;
-
-  @media (min-width: @tablet-width) {
-    &::before {
-      position: absolute;
-      content: "";
-
-      width: 123px;
-      height: 1px;
-
-      left: 0;
-      top: 55px;
-
-      background-color: @line-gray;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-
-      width: 123px;
-      height: 1px;
-
-      right: 0;
-      top: 55px;
-
-      background-color: @line-gray;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &::before {
-      position: absolute;
-      content: "";
-
-      width: 280px;
-      height: 1px;
-
-      left: 0;
-      top: 52px;
-
-      background-color: @line-gray;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-
-      width: 280px;
-      height: 1px;
-
-      right: 0;
-      top: 52px;
-
-      background-color: @line-gray;
-    }
-  }
 }
 
 .contact legend {
-  padding: 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    padding-top: 47px;
+    padding-top: 45px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 44px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 123px;
+      height: 1px;
+
+      left: -185px;
+      top: 54px;
+
+      background-color: @line-gray;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 123px;
+      height: 1px;
+
+      right: -185px;
+      top: 54px;
+
+      background-color: @line-gray;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 280px;
+      height: 1px;
+
+      left: -341px;
+      top: 54px;
+
+      background-color: @line-gray;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 280px;
+      height: 1px;
+
+      right: -341px;
+      top: 54px;
+
+      background-color: @line-gray;
+    }
   }
 }
 
@@ -94,8 +94,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 73px;
-    margin-bottom: 50px;
+    margin-top: 72px;
+    margin-bottom: 52px;
   }
 }
 
@@ -160,7 +160,7 @@
   background-color: @special-gray;
 
   @media (min-width: @tablet-width) {
-    padding-top: 20px;
+    padding-top: 18px;
   }
 
   @media (min-width: @desktop-width) {
@@ -172,13 +172,13 @@
 
 .contact__item--tel input {
   @media (max-width: @tablet-width - 1) {
-    padding: 19px 0 15px 22px;
+    padding: 17px 0 15px 22px;
   }
 }
 
 .contact__item--email input {
   @media (max-width: @tablet-width - 1) {
-    padding: 18px 0 17px 22px;
+    padding: 18px 0 14px 22px;
   }
 }
 
@@ -189,14 +189,15 @@
 
 .contact__item:first-of-type label {
   margin-top: 9px;
+  margin-bottom: 9px;
 
   @media (min-width: @desktop-width) {
-    margin-top: 0;
+    margin-top: 12px;
   }
 }
 
 .contact__item:last-of-type label {
-  margin-top: 12px;
+  margin-top: 13px;
   margin-bottom: 6px;
 
   @media (min-width: @tablet-width) {
@@ -222,7 +223,7 @@
   width: 58px;
   height: 58px;
 
-  top: 45px;
+  top: 44px;
   right: 0;
 
   background-color: @dark-gray;
@@ -240,7 +241,7 @@
   width: 18px;
   height: 18px;
 
-  top: 65px;
+  top: 63px;
   right: 19px;
 
   background-image: url("../img/icon-phone.svg");
@@ -260,7 +261,7 @@
   width: 58px;
   height: 58px;
 
-  top: 44px;
+  top: 45px;
   right: 0;
 
   background-color: @dark-gray;
@@ -269,7 +270,7 @@
 
   @media (min-width: @tablet-width) {
     height: 57px;
-    top: 58px;
+    top: 55px;
   }
 
   @media (min-width: @desktop-width) {

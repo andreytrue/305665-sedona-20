@@ -1,67 +1,17 @@
 /* Form attractions */
 
 .attractions {
+  margin-top: 16px;
+
   @media (min-width: @tablet-width) {
     width: 100%;
     margin-top: 16px;
-
-    &::before {
-      position: absolute;
-      content: "";
-
-      width: 123px;
-      height: 1px;
-
-      left: 0;
-      top: 22px;
-
-      background-color: @line-gray;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-
-      width: 123px;
-      height: 1px;
-
-      right: 0;
-      top: 22px;
-
-      background-color: @line-gray;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &::before {
-      position: absolute;
-      content: "";
-
-      width: 280px;
-      height: 1px;
-
-      left: 0;
-      top: 25px;
-
-      background-color: @line-gray;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-
-      width: 280px;
-      height: 1px;
-
-      right: 25px;
-      top: 25px;
-
-      background-color: @line-gray;
-    }
   }
 }
 
 .attractions legend {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     width: 308px;
   }
@@ -69,6 +19,62 @@
   @media (min-width: @desktop-width) {
     margin-top: -1px;
     padding-right: 24px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 123px;
+      height: 1px;
+
+      left: -170px;
+      top: 26px;
+
+      background-color: @line-gray;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 123px;
+      height: 1px;
+
+      right: -170px;
+      top: 26px;
+
+      background-color: @line-gray;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 280px;
+      height: 1px;
+
+      left: -326px;
+      top: 26px;
+
+      background-color: @line-gray;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 280px;
+      height: 1px;
+
+      right: -302px;
+      top: 26px;
+
+      background-color: @line-gray;
+    }
   }
 }
 

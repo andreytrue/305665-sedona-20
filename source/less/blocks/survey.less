@@ -19,12 +19,26 @@
 
   @media (min-width: @tablet-width) {
     order: -5;
+  }
 
+  @media (min-width: @desktop-width) {
+    width: 430px;
+  }
+}
+
+.survey legend {
+  position: relative;
+
+  @media (max-width: @tablet-width - 1) {
+    padding-left: 19px;
+  }
+
+  @media (min-width: @tablet-width) {
     &::after {
       position: absolute;
       content: "";
 
-      right: -51px;
+      right: -52px;
       top: 1px;
 
       width: 1px;
@@ -34,17 +48,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 430px;
-  }
-}
-
-.survey legend {
-  @media (max-width: @tablet-width - 1) {
-    padding-left: 19px;
-  }
-
-  @media (min-width: @desktop-width) {
     margin-right: auto;
+
+    &::after {
+      right: -131px;
+    }
   }
 }
 
