@@ -4,23 +4,37 @@
   align-items: center;
   flex-wrap: wrap;
 
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-
-    padding: 0 60px;
-    margin-top: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 120px;
+    margin: 0 auto;
   }
 }
 
-.footer--index {
+.footer--photo {
+  margin-top: 52px;
+
   @media (min-width: @tablet-width) {
-    margin-top: -2px;
-    padding: 0;
+    margin-top: -35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -17px;
+  }
+}
+
+.footer--form {
+  @media (max-width: @tablet-width - 1) {
+    margin-top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 5px;
   }
 }
 
@@ -28,35 +42,21 @@
   font-size: 21px;
   line-height: 26px;
 
-  margin: 0;
+  margin: 30px 0 32px;
   padding: 0;
-  margin-top: 33px;
-  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin: 30px 0 32px 60px;
+  }
 
   @media (min-width: @desktop-width) {
-    margin-top: 40px;
+    margin: 28px 0 32px 120px;
   }
 }
 
-.footer__title--index {
-  @media (max-width: @tablet-width - 1) {
+.footer__title--subpage {
+  @media (min-width: @tablet-width) {
     margin-top: 28px;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin-top: 36px;
-  }
-}
-
-.footer__title--photo {
-  margin-top: 80px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 23px;
   }
 }
 
@@ -71,48 +71,22 @@
   margin-right: 40px;
   margin-top: 28px;
   margin-bottom: 26px;
-}
-
-.footer__link--index {
-  @media (max-width: @tablet-width - 1) {
-    margin-top: 30px;
-  }
 
   @media (min-width: @tablet-width) {
     margin-top: 23px;
-  }
-}
-
-.footer__link--photo {
-  margin-top: 32px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: -12px;
+    padding-right: 60px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: -14px 40px 0 0;
-  }
-}
-
-.footer__link--form {
-  @media (max-width: @tablet-width - 1) {
-    margin-top: 31px;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin-top: 25px;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin-top: 26px;
+    margin-top: 23px;
+    padding-right: 120px;
   }
 }
 
 .footer__link-logo {
   position: absolute;
-  top: 10px;
-  right: -40px;
+  top: 9px;
+  left: 101px;
 }
 
 .footer__link-logo--photo {
