@@ -180,7 +180,16 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: -54px;
     height: 356px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
+      background-position: center bottom;
+    }
   }
 }
 
